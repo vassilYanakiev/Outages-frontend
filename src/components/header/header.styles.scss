@@ -1,0 +1,57 @@
+
+
+.headerLight {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;  
+  background-color:black;
+  
+  
+  .logo-container {
+      //font-family: 'Galaxy';       
+      color:#FFE300;
+      cursor: pointer;      
+      border: none;
+      background: none;
+      outline: none;
+      font-size:14px;
+      height: 100%;
+      width: 70px;
+      padding-left: 25px;
+  }
+
+  .options {
+    margin-right: 15px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+
+    .buttonh2{
+      
+      background-color: black;
+      padding: 10px;
+     
+      border: none;    
+      border-color:black;
+      outline: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    .option {
+      color:#4BD5EE;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
