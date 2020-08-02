@@ -24,7 +24,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "https://outages-api.herokuapp.com",
+  
   "browserslist": {
     "production": [
       ">0.2%",
