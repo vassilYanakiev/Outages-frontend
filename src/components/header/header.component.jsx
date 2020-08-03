@@ -16,8 +16,13 @@ return(
           <button className="logo-container">
             ALARM Manager
           </button>             
-       
+
               <div className="options">
+              <button className="buttonh2">
+                  <Link className='option' to='/all'>
+                    All
+                  </Link>
+                </button>
                 <button className="buttonh2">
                   <Link className='option' to='/current'>
                     Current

@@ -4,7 +4,7 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import {Alert}  from "react-bootstrap";
 
 
-class CurrentAlarms extends Component {
+class AllAlarms extends Component {
     constructor() {
       super();
   
@@ -14,7 +14,7 @@ class CurrentAlarms extends Component {
     }
    
     componentDidMount() {
-      fetch('/outages/current')
+      fetch('/outages')
         .then(response => response.json())
         //.then(recent => console.log(recent));
         .then(recent => this.setState({ alarms: recent }));   
@@ -58,7 +58,7 @@ class CurrentAlarms extends Component {
       return (
         
           <div >         
-            <Alert variant='danger'><h5>Current Alarms</h5></Alert>  
+            <Alert variant='info'><h5>All Alarms</h5></Alert>  
             <div>      
               <BootstrapTable striped keyField='id' data={ filteredalarms } columns={ columns }  /> 
             </div>        
@@ -68,4 +68,4 @@ class CurrentAlarms extends Component {
     }
   }
   
-  export default CurrentAlarms;
+  export default AllAlarms;
