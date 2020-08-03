@@ -44,7 +44,7 @@ class FlappingAlarms extends Component {
         sort: true
       }, {
         dataField: 'sum_outages',
-        text: 'Total minutes',
+        text: 'Total count',
         sort: true
       }];
   
