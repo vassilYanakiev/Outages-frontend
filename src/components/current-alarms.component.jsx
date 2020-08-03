@@ -14,7 +14,7 @@ class CurrentAlarms extends Component {
     }
    
     componentDidMount() {
-      fetch('https://outages-api.herokuapp.com/outages')
+      fetch('/outages')
         .then(response => response.json())
         //.then(recent => console.log(recent));
         .then(recent => this.setState({ alarms: recent }));   
