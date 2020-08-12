@@ -4,6 +4,8 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import {Alert}  from "react-bootstrap";
 
 
+var proxyUrl='https://cors-anywhere.herokuapp.com/';
+
 class AllAlarms extends Component {
     constructor() {
       super();
@@ -12,9 +14,9 @@ class AllAlarms extends Component {
         alarms: []
       };
     }
-   
+    
     componentDidMount() {
-      fetch('/outages')
+      fetch(proxyUrl + '/outages')
         .then(response => response.json())
         //.then(recent => console.log(recent));
         .then(recent => this.setState({ alarms: recent }));   

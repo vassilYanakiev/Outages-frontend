@@ -28,7 +28,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://outages-api.herokuapp.com",
   "browserslist": {
     "production": [
       ">0.2%",
