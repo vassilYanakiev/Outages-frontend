@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Outages-frontend/static/css/main.b864add4.chunk.css",
-    "main.js": "/Outages-frontend/static/js/main.63d81c0f.chunk.js",
-    "main.js.map": "/Outages-frontend/static/js/main.63d81c0f.chunk.js.map",
+    "main.js": "/Outages-frontend/static/js/main.3411efd3.chunk.js",
+    "main.js.map": "/Outages-frontend/static/js/main.3411efd3.chunk.js.map",
     "runtime-main.js": "/Outages-frontend/static/js/runtime-main.9168774c.js",
     "runtime-main.js.map": "/Outages-frontend/static/js/runtime-main.9168774c.js.map",
     "static/css/2.9e2b3803.chunk.css": "/Outages-frontend/static/css/2.9e2b3803.chunk.css",
     "static/js/2.9f0e6a72.chunk.js": "/Outages-frontend/static/js/2.9f0e6a72.chunk.js",
     "static/js/2.9f0e6a72.chunk.js.map": "/Outages-frontend/static/js/2.9f0e6a72.chunk.js.map",
     "index.html": "/Outages-frontend/index.html",
-    "precache-manifest.893104e315b0fece49f78656611f0b02.js": "/Outages-frontend/precache-manifest.893104e315b0fece49f78656611f0b02.js",
+    "precache-manifest.d55c8f4fb4f63d1497041997d4c8c9b1.js": "/Outages-frontend/precache-manifest.d55c8f4fb4f63d1497041997d4c8c9b1.js",
     "service-worker.js": "/Outages-frontend/service-worker.js",
     "static/css/2.9e2b3803.chunk.css.map": "/Outages-frontend/static/css/2.9e2b3803.chunk.css.map",
     "static/css/main.b864add4.chunk.css.map": "/Outages-frontend/static/css/main.b864add4.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.9e2b3803.chunk.css",
     "static/js/2.9f0e6a72.chunk.js",
     "static/css/main.b864add4.chunk.css",
-    "static/js/main.63d81c0f.chunk.js"
+    "static/js/main.3411efd3.chunk.js"
   ]
 }
