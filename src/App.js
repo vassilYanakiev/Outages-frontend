@@ -13,12 +13,7 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    fetch('/outages/recent:80000')
-      .then(response => response.json())
-      .then(recent => this.setState({ alarms: recent }));   
-    
-  }
+  
   onSearchChange = event => {
     this.setState({ searchField: event.target.value });
   };

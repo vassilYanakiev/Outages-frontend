@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 import {Alert}  from "react-bootstrap";
 
+var proxyUrl='https://dry-island-50669.herokuapp.com/';
+var url = "https://outages-api.herokuapp.com/outages/recent:1440";
 
 class RecentAlarms extends Component {
     constructor() {
@@ -13,7 +15,7 @@ class RecentAlarms extends Component {
     }
   
     componentDidMount() {
-      fetch('/outages/recent:1440')
+      fetch(proxyUrl +url)
         .then(response => response.json())
         //.then(recent => console.log(recent));
         .then(recent => this.setState({ alarms: recent }));   

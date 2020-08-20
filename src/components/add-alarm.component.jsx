@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
-import {Form, Button,Col} from "react-bootstrap";
+import {Form, Button, Col} from "react-bootstrap";
 
-
-
+var proxyUrl='https://dry-island-50669.herokuapp.com/';
+var url = "http://127.0.0.1:5000/outages/add";
+var url2 = "https://outages-api.herokuapp.com/outages/add";
 
 export default function AddAlarm() {
   // Declare a new state variable, which we'll call "count"
         const [alarm, setAlarm] = useState();
         const [start, setStart] = useState('');
         const [duration, setDuration] = useState(0);
-        const alarmInstance = {"service_id":parseInt(alarm),"startTime":start.toString(),"duration":parseInt(duration)};
+        
         const [show, setShow] = useState(false);
         return (
             <div style={{}}>
@@ -64,17 +65,28 @@ export default function AddAlarm() {
 
             <Button variant="flat" type="submit"
             onClick={async() =>{
-                const response = await fetch('/outages',{
+                
+                const alarmInstance = {"service_id":parseInt(alarm),"startTime":start.toString(),"duration":parseInt(duration)};
+                const mybody = JSON.stringify(alarmInstance);               
+                
+                try{
+                const response = await fetch(url2,{
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json',
-
+                        'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(alarmInstance)
-                });
-                response.ok?alert(JSON.stringify("Added successfuly!")):setShow(false);
+                    body: mybody
+                })
+                if(!response.ok){alert(response.status)}
+                else{ alert(response.status)}
+                }
                 
+                catch(error) {
+                    alert("server failure " + error)
+                }
+               
 
+                
              }}
             
             >   Add
