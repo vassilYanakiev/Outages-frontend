@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e1a26d3cbaba935def51ef422c46e63a",
+    "revision": "35c7443aaeeaf4b12da7dbe4da086846",
     "url": "/Outages-frontend/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Outages-frontend/static/css/2.9e2b3803.chunk.css"
   },
   {
-    "revision": "82d5214681550af77fde",
+    "revision": "ce5616b4dae1c69a7a56",
     "url": "/Outages-frontend/static/css/main.b864add4.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Outages-frontend/static/js/2.9f0e6a72.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "82d5214681550af77fde",
-    "url": "/Outages-frontend/static/js/main.cecd438e.chunk.js"
+    "revision": "ce5616b4dae1c69a7a56",
+    "url": "/Outages-frontend/static/js/main.49ee5b9c.chunk.js"
   },
   {
     "revision": "cfc3302e2a8d105ff181",
