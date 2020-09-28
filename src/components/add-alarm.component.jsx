@@ -66,12 +66,12 @@ export default function AddAlarm() {
             <Button variant="flat" type="submit"
             onClick={async() =>{
                 
-                const alarmInstance = {"service_id":parseInt(alarm),"startTime":start.toString(),"duration":parseInt(duration)};
+                const alarmInstance = {"service_id": parseInt(alarm),"startTime": start.toString(),"duration": parseInt(duration)};
                 const mybody = JSON.stringify(alarmInstance);               
                 
                 try{
                 const response = await fetch(url2,{
-                    method: 'POST',
+                    method: 'POST',                    
                     headers: {
                         'Content-Type': 'application/json'
                     },

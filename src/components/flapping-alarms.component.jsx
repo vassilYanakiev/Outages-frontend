@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 //import * as ReactBottStrap from "react-bootstrap";
 import BootstrapTable from 'react-bootstrap-table-next';
 import {Alert}  from "react-bootstrap";
+import LoaderComponent from './loader.component.jsx';
 
 var proxyUrl='https://dry-island-50669.herokuapp.com';
 var url = "/https://outages-api.herokuapp.com/flappings";
@@ -11,15 +12,17 @@ class FlappingAlarms extends Component {
       super();
   
       this.state = {
-        alarms: []
+        alarms: [],
+        loading: false,
       };
     }
   
     componentDidMount() {
+      this.setState({ loading: true });
       fetch(proxyUrl +url)
         .then(response => response.json())
         //.then(recent => console.log(recent));
-        .then(recent => this.setState({ alarms: recent }));   
+        .then(recent => this.setState({ alarms: recent, loading: false  }));   
       
     }
     onSearchChange = event => {
@@ -69,6 +72,13 @@ class FlappingAlarms extends Component {
         )             
         
       );
+      if (this.state.loading) return(
+  
+        <div style={{"display" : "flex",'justify-content': 'center','margin-top':'100px'}}> 
+            <LoaderComponent />
+        </div> 
+      
+     )
       return (
         
           <div >         
